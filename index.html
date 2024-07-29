@@ -4,40 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            flex-wrap: wrap; 
+            margin: 20px 0; 
+        }
+
+        .contact-info p {
+            margin: 0; 
+            text-decoration: underline;
+        }
+
+        .contact-info a {
+            color: inherit; 
+            text-decoration: underline;
+        }
+
+        /* Education section styling */
+        .education-container {
+            margin: 20px 0; 
+        }
+
+        .education-details {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin-top: 10px; 
+        }
+
+        .education-details .right-align {
+            text-align: right; 
+        }
+
+        
+        .hr-after-education {
+            border: 0; 
+            border-top: 1px solid #000; 
+            width: 100%; 
+            margin: 10px 0; 
+        }
+
+        /* Styling for the Experience section */
+        .experience-container {
+            display: flex;
+            justify-content: space-between; 
+            margin: 20px 0; 
+            align-items: flex-start; 
+        }
+
+        .experience-details {
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-end; 
+            text-align: right; 
+        }
+
+        .experience-details .dates {
+            margin-bottom: 5px; 
+        }
+
+        .experience-content {
+            flex: 1; 
+        }
+
+        /* Styling for Projects section */
+        .project-details {
+            display: flex;
+            align-items: center; 
+        }
+
+        .project-details h2 {
+            margin: 0; 
+        }
+
+        .project-details span {
+            font-weight: normal; 
+            margin-left: 10px; 
+        }
+    </style>
 </head>
 <body>
-    <h1>SHWETA KALE</h1>
+    <hr>
+    <h1 class="center">SHWETA KALE</h1>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <p>7304262137</p>
+        <p><a href="mailto:shwetakale2207@gmail.com">shwetakale2207@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/shweta-kale-526979229/" target="_blank">www.linkedin.com/in/shweta-kale-526979229</a></p>
+        <p><a href="https://github.com/SHWETA-KALE" target="_blank">github.com/SHWETA-KALE</a></p>
+    </div>
 
     <h1>Education</h1>
-
-    <hr>
-
-    <h2>BACHELORS OF ENGINEERING IN IT</h2>
-    <p><i>N.Y.S.S Datta Meghe college of engineering</i></p>
+    <hr class="hr-after-education"> 
     
-    <h2>HIGHER SECONDARY SCHOOL</h2>
-    <p><i>S.E.S college, Navi Mumbai </i></p>
+    <div class="education-container">
+        <div class="education-details">
+            <div>
+                <h2>BACHELORS OF ENGINEERING IN IT</h2>
+                <p><i>N.Y.S.S Datta Meghe college of engineering</i></p>
+            </div>
+            <div class="right-align">
+                <p>CGPA-9.02</p>
+                <p><i>Airoli, Maharashtra.</i></p>
+            </div>
+        </div>
+    </div>
 
-    <h2>SECONDARY SCHOOL CERTIFICATE</h2>
-    <p><i>S.E.S school, Kalamboli</i></p>
+    <div class="education-container">
+        <div class="education-details">
+            <div>
+                <h2>HIGHER SECONDARY SCHOOL</h2>
+                <p><i>S.E.S college, Navi Mumbai</i></p>
+            </div>
+            <div class="right-align">
+                <p>Percentage-75.85</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="education-container">
+        <div class="education-details">
+            <div>
+                <h2>SECONDARY SCHOOL CERTIFICATE</h2>
+                <p><i>S.E.S school, Kalamboli</i></p>
+            </div>
+            <div class="right-align">
+                <p>Percentage-91.20</p>
+            </div>
+        </div>
+    </div>
 
     <h1>Experience</h1>
     <hr>
-    <h2>Let's Grow More</h2>
-    <i>Web development intern</i>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut nihil voluptatibus nostrum blanditiis ullam mollitia illo. Qui reprehenderit sequi itaque nulla suscipit accusantium.</p>
+   
+    <div class="experience-container">
+        <div class="experience-content">
+            <h2>Let's Grow More</h2>
+            <i>Web development intern</i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut nihil voluptatibus nostrum blanditiis ullam mollitia illo. Qui reprehenderit sequi itaque nulla suscipit accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque, blanditiis fugiat ab, a velit non laudantium quaerat accusamus, animi omnis consequuntur ducimus. Praesentium iste aspernatur alias sunt dolore quis!</p>
+        </div>
+        <div class="experience-details">
+            <p class="dates">1 July 2023 - 31 July 2023</p>
+            <p><i>Remote</i></p>
+        </div>
+    </div>
 
-    <h2>Dead Of Writes Publication</h2>
-    <i>Web development intern</i>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vel nemo voluptates omnis, vitae dolore ab suscipit culpa asperiores autem, pariatur saepe sed repellat explicabo. Mollitia neque dolores voluptas veniam?</p>
+    <div class="experience-container">
+        <div class="experience-content">
+            <h2>Dead Of Writes Publication</h2>
+            <i>Web development intern</i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut nihil voluptatibus nostrum blanditiis ullam mollitia illo. Qui reprehenderit sequi itaque nulla suscipit accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque, blanditiis fugiat ab, a velit non laudantium quaerat accusamus, animi omnis consequuntur ducimus. Praesentium iste aspernatur alias sunt dolore quis!</p>
+        </div>
+        <div class="experience-details">
+            <p class="dates">June 2022 - July 2022</p>
+            <p><i>Remote</i></p>
+        </div>
+    </div>
+    
+
     <h1>Projects</h1>
     <hr>
-    <h2>Employee Payroll System</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus id, cum non tempora possimus, aut distinctio placeat dicta sunt dolorem molestiae voluptatum quidem neque labore esse. Voluptates placeat dolorum non.</p>
+    <div class="project-details">
+        <h2>Employee Payroll System</h2>
+        <span>| Java (OOPS)</span>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus id, cum non tempora possimus, aut distinctio placeat dicta sunt dolorem molestiae voluptatum quidem neque labore esse. Voluptates placeat dolorum non. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quas tempore quia? Minima sunt autem facere laborum magnam quae aliquam, modi velit debitis ullam sapiente veniam beatae totam repellendus natus!</p>
 
-    <h2>Weather API</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum est aut corrupti error amet reprehenderit dolorem sed ex inventore explicabo magni, blanditiis ipsum! Vitae excepturi voluptatum in illo? Quos.</p>
+    <div class="project-details">
+        <h2>Weather API</h2>
+        <span>| HTML, CSS, JavaScript</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum est aut corrupti error amet reprehenderit dolorem sed ex inventore explicabo magni, blanditiis ipsum! Vitae excepturi voluptatum in illo? Quos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit similique quae quo dicta ipsam deleniti culpa quam nemo earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, eius aut. Voluptates nesciunt a possimus quia totam accusantium maxime nam?</p>
 
     <h1>Technical Skills</h1>
     <hr>
@@ -45,7 +190,6 @@
     <p>Databases: SQL</p>
     <p>Tools: Visual Studio Code, Git</p>
     <p>Course: Object Oriented Programming, DBMS</p>
-
 
     <h1>Soft Skills</h1>
     <hr>
