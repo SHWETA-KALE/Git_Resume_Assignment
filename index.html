@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Resume</title>
     <style>
+        .container {
+            border: 2px solid #000; 
+            padding: 20px; 
+            border-radius: 10px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+
         .center {
             text-align: center;
         }
@@ -27,23 +36,26 @@
             text-decoration: underline;
         }
 
+        .blue-heading {
+            color: blue; 
+        }
+
         /* Education section styling */
         .education-container {
-            margin: 20px 0; 
+            margin: 10px 0; 
         }
 
         .education-details {
             display: flex;
             justify-content: space-between; 
             align-items: center;
-            margin-top: 10px; 
+            margin-top: 5px; 
         }
 
         .education-details .right-align {
             text-align: right; 
         }
 
-        
         .hr-after-education {
             border: 0; 
             border-top: 1px solid #000; 
@@ -90,25 +102,26 @@
         }
     </style>
 </head>
-<body>
+<body >
+    <div class="container">
     <hr>
-    <h1 class="center">SHWETA KALE</h1>
+    <h1 class="center blue-heading">SHWETA KALE</h1>
 
     <!-- Contact Information Section -->
     <div class="contact-info">
-        <p>7304262137</p>
-        <p><a href="mailto:shwetakale2207@gmail.com">shwetakale2207@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/shweta-kale-526979229/" target="_blank">www.linkedin.com/in/shweta-kale-526979229</a></p>
-        <p><a href="https://github.com/SHWETA-KALE" target="_blank">github.com/SHWETA-KALE</a></p>
+        <p><i class="fa fa-phone">7304262137</i></p>
+        <p><i class="fa fa-envelope"><a href="mailto:shwetakale2207@gmail.com">shwetakale2207@gmail.com</a></i></p>
+        <p><i class="fa fa-linkedin-square"><a href="https://www.linkedin.com/in/shweta-kale-526979229/" target="_blank">www.linkedin.com/in/shweta-kale-526979229</a></i></p>
+        <p><i class="fa fa-github"><a href="https://github.com/SHWETA-KALE" target="_blank">github.com/SHWETA-KALE</a></i></p>
     </div>
 
-    <h1>Education</h1>
+    <h1 class="blue-heading">Education</h1>
     <hr class="hr-after-education"> 
     
     <div class="education-container">
         <div class="education-details">
             <div>
-                <h2>BACHELORS OF ENGINEERING IN IT</h2>
+                <h2><b>BACHELORS OF ENGINEERING IN IT</b></h2>
                 <p><i>N.Y.S.S Datta Meghe college of engineering</i></p>
             </div>
             <div class="right-align">
@@ -134,7 +147,7 @@
         <div class="education-details">
             <div>
                 <h2>SECONDARY SCHOOL CERTIFICATE</h2>
-                <p><i>S.E.S school, Kalamboli</i></p>
+                <p><i>S.E.S School, Kalamboli</i></p>
             </div>
             <div class="right-align">
                 <p>Percentage-91.20</p>
@@ -142,14 +155,15 @@
         </div>
     </div>
 
-    <h1>Experience</h1>
+    <h1 class="blue-heading">Experience</h1>
     <hr>
    
     <div class="experience-container">
         <div class="experience-content">
             <h2>Let's Grow More</h2>
             <i>Web development intern</i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut nihil voluptatibus nostrum blanditiis ullam mollitia illo. Qui reprehenderit sequi itaque nulla suscipit accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque, blanditiis fugiat ab, a velit non laudantium quaerat accusamus, animi omnis consequuntur ducimus. Praesentium iste aspernatur alias sunt dolore quis!</p>
+            <p>-Assisted in front-end development tasks, such as writing clean and maintainable <span><b>HTML</b>,</span> <span><b>CSS</b></span>, and <span><b>JavaScript</b></span> code to enhance user experiences. </p>
+            <p>-Utilized version control systems like <span><b>Git</b></span> to collaborate on code with the development team, track changes, and maintain a consistent codebase.</p>
         </div>
         <div class="experience-details">
             <p class="dates">1 July 2023 - 31 July 2023</p>
@@ -161,7 +175,8 @@
         <div class="experience-content">
             <h2>Dead Of Writes Publication</h2>
             <i>Web development intern</i>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut nihil voluptatibus nostrum blanditiis ullam mollitia illo. Qui reprehenderit sequi itaque nulla suscipit accusantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque, blanditiis fugiat ab, a velit non laudantium quaerat accusamus, animi omnis consequuntur ducimus. Praesentium iste aspernatur alias sunt dolore quis!</p>
+            <p>-Collaborated with the front-end development team to create responsive and user-friendly web interfaces using <span><b>HTML</b>,</span> <span><b>CSS</b></span>, and <span><b>JavaScript</b></span> </p>
+            <p>-Utilized CSS frameworks such as <span><b>BOOTSTRAP</b></span> to streamline the development process and maintain a consistent design across the website.</p>
         </div>
         <div class="experience-details">
             <p class="dates">June 2022 - July 2022</p>
@@ -170,29 +185,34 @@
     </div>
     
 
-    <h1>Projects</h1>
+    <h1 class="blue-heading">Projects</h1>
     <hr>
     <div class="project-details">
         <h2>Employee Payroll System</h2>
         <span>| Java (OOPS)</span>
     </div>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus id, cum non tempora possimus, aut distinctio placeat dicta sunt dolorem molestiae voluptatum quidem neque labore esse. Voluptates placeat dolorum non. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quas tempore quia? Minima sunt autem facere laborum magnam quae aliquam, modi velit debitis ullam sapiente veniam beatae totam repellendus natus!</p>
+    <p>-Developed Employee Payroll System using Java, applying Object-Oriented Programming (OOP) principles.</p>
+    <p>-Employed OOP concepts, including encapsulation, inheritance, abstraction, and polymorphism, to design a modular system architecture.</p>
+    <p>-Developed a robust employee management module to handle different types of employees, calculate salaries based on unique criteria, and manage employee records efficiently.</p>
 
     <div class="project-details">
         <h2>Weather API</h2>
         <span>| HTML, CSS, JavaScript</span>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum est aut corrupti error amet reprehenderit dolorem sed ex inventore explicabo magni, blanditiis ipsum! Vitae excepturi voluptatum in illo? Quos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit similique quae quo dicta ipsam deleniti culpa quam nemo earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, eius aut. Voluptates nesciunt a possimus quia totam accusantium maxime nam?</p>
+    <p>-Developed a dynamic and user-friendly Weather API application that provides real-time weather information for locations worldwide.</p>
+    <p>-Integrated a third-party weather API to retrieve up-to-date weather data, including temperature, humidity, wind speed, and weather conditions.</p>
 
-    <h1>Technical Skills</h1>
+    <h1 class="blue-heading">Technical Skills</h1>
     <hr>
     <p>Languages: Java, HTML/CSS, JavaScript</p>
     <p>Databases: SQL</p>
     <p>Tools: Visual Studio Code, Git</p>
     <p>Course: Object Oriented Programming, DBMS</p>
 
-    <h1>Soft Skills</h1>
+    <h1 class="blue-heading">Soft Skills</h1>
     <hr>
     <p>Teamwork, Adaptability, Attention to details, Innovative thinking.</p>
+</div>
 </body>
+
 </html>
